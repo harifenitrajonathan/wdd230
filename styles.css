@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header,
+footer,
+section {
+    margin: 20px;
+}
+
+h1,
+h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #005a8d;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#color-schema p,
+#typography p {
+    margin-bottom: 10px;
+}
+
+#wireframe img {
+    max-width: 100%;
+    height: auto;
+}
