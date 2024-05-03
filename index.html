@@ -20,10 +20,13 @@
 
 <body>
     <header>
-        <img src="images/profile.jpg" alt="Jonathan">
+        <div class="profile-container">
+            <img src="images/profile.jpg" alt="Jonathan">
+        </div>
         <span>Harifenitra Jonathan</span>
+        <button class="dark-mode-toggle" aria-label="Toggle Dark Mode">Dark Mode</button>
     </header>
-
+    <button class="hamburger" aria-label="Menu">&#9776;</button>
     <nav>
         <ul>
             <li><a href="#home">Home</a></li>
@@ -34,29 +37,30 @@
     </nav>
 
     <main>
-        <h1>WDD 230: Web Frontend Development</h1>
-
-        <section class="card">
-            <h2>Learning Activities</h2>
-            <ul id="learning-activities">
-                <li>Week 1</li>
-                <li>Week 2 <a href="https://codepen.io/your-username" target="_blank">View Week 2 CodePen</a> </li>
-                <li>Week 3</li>
-                <li>Week 4</li>
-                <li>Week 5</li>
-                <li>Week 6</li>
-            </ul>
-        </section>
-
-
-
-        <section class="card" id="information">
-            <h2>Information</h2>
-            <p>Weather: Sunny</p>
-            <p>Number of Visits: 100</p>
-
-        </section>
-
+        <div class="card-container">
+            <div class="column">
+                <h1>WDD 230: Web Frontend Development</h1>
+                <section class="card" id="learning-activities">
+                    <h2>Learning Activities</h2>
+                    <ul>
+                        <li>Week 1</li>
+                        <li>Week 2 <a href="https://codepen.io/your-username" target="_blank">View Week 2 CodePen</a>
+                        </li>
+                        <li>Week 3</li>
+                        <li>Week 4</li>
+                        <li>Week 5</li>
+                        <li>Week 6</li>
+                    </ul>
+                </section>
+            </div>
+            <div class="column">
+                <section class="card" id="information">
+                    <h2>Information</h2>
+                    <p>Weather: Sunny</p>
+                    <p>Number of Visits: 100</p>
+                </section>
+            </div>
+        </div>
     </main>
 
     <footer>
@@ -65,6 +69,10 @@
     </footer>
 
     <script src="scripts/getDates.js"></script>
+    <script>
+
+    </script>
+
 
 
 </body>
