@@ -1,0 +1,26 @@
+.current-events,
+.weather-card,
+.spotlights {
+    font-size: 20px;
+}
+
+.current-events,
+.weather-card {
+    padding: 30px;
+    margin-right: 40px;
+}
+
+.spotlights {
+    padding: 30px;
+    margin-top: 40px;
+}
+
+header {
+    padding: 30px;
+}
+
+.hero img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+}
