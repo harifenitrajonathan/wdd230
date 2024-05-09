@@ -1,4 +1,3 @@
-
 const currentYear = new Date().getFullYear();
 const copyrightText = document.getElementById('copyright');
 copyrightText.textContent = `\u00A9 ${currentYear} Harifenitra Jonathan, Madagascar, Antsirabe`;
@@ -11,10 +10,12 @@ const navMenu = document.querySelector('nav ul');
 
 hamburger.addEventListener('click', () => {
     navMenu.classList.toggle('show');
+    hamburger.textContent = navMenu.classList.contains('show') ? '✕' : '☰';
 });
 
 navMenu.addEventListener('click', () => {
     navMenu.classList.remove('show');
+    hamburger.textContent = '☰'; // Reset the hamburger symbol to ☰ when the nav menu is closed
 });
 
 const darkModeToggle = document.querySelector('.dark-mode-toggle');

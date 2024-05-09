@@ -4,13 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Harifenitra Jonathan] - WDD 230 - Web Frontend Development</title>
+    <title>Harifenitra Jonathan - WDD 230 - Web Frontend Development</title>
     <meta name="description"
         content="WDD 230 - Web Frontend Development course assignment portal by Harifenitra Jonathan Rajaonarison">
     <meta property="og:title" content="Course portal home page">
     <meta property="og:type" content="website">
-    <meta property="og:image"
-        content="https://www.google.com/imgres?q=antsirabe%20pic&imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fe%2Fe7%2FAntsirabe_-_rue_principale02.JPG%2F800px-Antsirabe_-_rue_principale02.JPG&imgrefurl=https%3A%2F%2Ffr.wikipedia.org%2Fwiki%2FAntsirabe&docid=stqow1IFFt9fwM&tbnid=ITkZfMWjb9WTMM&vet=12ahUKEwjlo73Z_e6FAxVk_rsIHchbCE8QM3oECBQQAA..i&w=800&h=587&hcb=2&ved=2ahUKEwjlo73Z_e6FAxVk_rsIHchbCE8QM3oECBQQAA">
+    <meta property="og:image" content="https://www.istockphoto.com/fr/photo/gare-dantsirabe-gm857993590-141581713">
     <meta property="og:url" content="http://127.0.0.1:5500/index.html">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -24,8 +23,8 @@
         </div>
         <span>Harifenitra Jonathan</span>
         <button class="dark-mode-toggle" aria-label="Toggle Dark Mode">Dark Mode</button>
+        <button class="hamburger" aria-label="Menu">&#9776;</button>
     </header>
-    <button class="hamburger" aria-label="Menu">&#9776;</button>
     <nav>
         <ul>
             <li><a href="#home">Home</a></li>
@@ -36,29 +35,37 @@
     </nav>
 
     <main>
+        <div class="temple-image">
+            <picture>
+                <source srcset="images/hero-mobile.webp" media="(max-width: 400px)">
+                <source srcset="images/hero-large.webp" media="(min-width: 401px)">
+                <img src="images/hero-large.webp" alt="Favorite Latter-day Temple">
+            </picture>
+        </div>
+
+        <div class="wdd230">
+            <h1>WDD 230: Web Frontend Development</h1>
+        </div>
+
         <div class="card-container">
-            <div class="column">
-                <h1>WDD 230: Web Frontend Development</h1>
-                <section class="card" id="learning-activities">
-                    <h2>Learning Activities</h2>
-                    <ul>
-                        <li>Week 1 <a href="chamber-site-plan.html">Chamber Site Plan</a></li>
-                        <li>Week 2 <a href="https://codepen.io/your-username" target="_blank">View Week 2 CodePen</a>
-                        </li>
-                        <li>Week 3 <a href="week03/images/landscape.webp">WebP</a></li>
-                        <li>Week 4</li>
-                        <li>Week 5</li>
-                        <li>Week 6</li>
-                    </ul>
-                </section>
-            </div>
-            <div class="column">
-                <section class="card" id="information">
-                    <h2>Information</h2>
-                    <p>Weather: Sunny</p>
-                    <p>Number of Visits: 100</p>
-                </section>
-            </div>
+            <section class="card" id="learning-activities">
+                <h2>Learning Activities</h2>
+                <ul>
+                    <li>Week 1 <a href="chamber-site-plan.html">Chamber Site Plan</a></li>
+                    <li>Week 2 <a href="https://codepen.io/your-username" target="_blank">View Week 2 CodePen</a>
+                    </li>
+                    <li>Week 3 <a href="week03/images/landscape.webp">WebP</a></li>
+                    <li>Week 4</li>
+                    <li>Week 5</li>
+                    <li>Week 6</li>
+                </ul>
+            </section>
+
+            <section class="card" id="information">
+                <h2>Information</h2>
+                <p>Weather: Sunny</p>
+                <p>Number of Visits: 100</p>
+            </section>
         </div>
     </main>
 
@@ -68,11 +75,6 @@
     </footer>
 
     <script src="scripts/getDates.js"></script>
-    <script>
-
-    </script>
-
-
 
 </body>
 
