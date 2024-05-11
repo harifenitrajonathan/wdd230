@@ -19,7 +19,7 @@
 <body>
     <header>
         <div class="profile-container">
-            <img src="images/profile.jpg" alt="Jonathan">
+            <img src="images/profile.webp" alt="Jonathan">
         </div>
         <span>Harifenitra Jonathan</span>
         <button class="dark-mode-toggle" aria-label="Toggle Dark Mode">Dark Mode</button>
@@ -41,6 +41,9 @@
                 <source srcset="images/hero-large.webp" media="(min-width: 401px)">
                 <img src="images/hero-large.webp" alt="Favorite Latter-day Temple">
             </picture>
+            <div class="herolabel">
+                <p>Johannesburg Temple</p>
+            </div>
         </div>
 
         <div class="wdd230">
@@ -64,10 +67,18 @@
             <section class="card" id="information">
                 <h2>Information</h2>
                 <p>Weather: Sunny</p>
-                <p>Number of Visits: 100</p>
+                <p id="visit-counter">Number of Visits: <span id="visit-count">0</span></p>
             </section>
         </div>
     </main>
+
+    <div class="google-map">
+        <iframe
+            src="
+            https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d60045.84959706452!2d47.014590421776646!3d-19.845638914368827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e6!4m3!3m2!1d-19.8175705!2d47.0742488!4m3!3m2!1d-19.8730077!2d47.0291162!5e0!3m2!1sfr!2smg!4v1715424579119!5m2!1sfr!2smg"
+            width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
 
     <footer>
         <p id="copyright"></p>
