@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <meta name="description" content="Welcome to the Chamber of Commerce website. Join us today!">
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:title" content="Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="image.jpg">
+    <meta property="og:url" content="http://127.0.0.1:5500/chamber/index.html">
+
+
+</head>
+
+<body>
+    <header>
+        <h1>Antsirabe Chamber of Commerce</h1>
+    </header>
+    <nav>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <main>
+            <section class="sidebar">
+                <div class="visit-message"></div>
+                <div class="about-card">
+                    <h2>Discover the Chamber of Commerce</h2>
+                    <p>The Chamber of Commerce in Antsirabe is dedicated to promoting economic growth, fostering
+                        business development, and enhancing the quality of life for the community.</p>
+                </div>
+                <div class="objectives-card">
+                    <h3>Key Objectives</h3>
+                    <ul>
+                        <li>Promote local businesses</li>
+                        <li>Provide networking opportunities</li>
+                        <li>Advocate for business-friendly policies</li>
+                        <li>Support community initiatives</li>
+                    </ul>
+                </div>
+                <div class="events-card">
+                    <h3>Upcoming events</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Event</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>May 15th</td>
+                                <td>Business Networking Mixer</td>
+                            </tr>
+                            <tr>
+                                <td>May 22nd</td>
+                                <td>Small Business Workshop</td>
+                            </tr>
+                            <tr>
+                                <td>June 5th</td>
+                                <td>Community Clean-Up Day</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+            <section class="main-content">
+                <figure>
+                    <img data-src="images/images1.webp" alt="Image 1">
+                    <figcaption>Promoting economic growth</figcaption>
+                </figure>
+                <figure>
+                    <img data-src="images/images2.webp" alt="Image 2">
+                    <figcaption>Collaborate with different sectors</figcaption>
+                </figure>
+                <figure>
+                    <img data-src="images/images3.webp" alt="Image 3">
+                    <figcaption>Finding ways to improve visibily</figcaption>
+                </figure>
+                <figure>
+                    <img data-src="images/images4.webp" alt="Image 4">
+                    <figcaption>Enhancing the quality of life for the community.</figcaption>
+                </figure>
+                <figure>
+                    <img data-src="images/images5.webp" alt="Image 5">
+                    <figcaption>Achieve common goal</figcaption>
+                </figure>
+                <figure>
+                    <img data-src="images/images6.webp" alt="Image 6">
+                    <figcaption>Have financial security</figcaption>
+                </figure>
+            </section>
+        </main>
+
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <h2>Contact us</h2>
+            <p>Email: cei.antsirabe@gmail.com</p>
+            <p>Phone: 34-571-5117</p>
+        </div>
+        <div class="development-info">
+            <p>Developed by: Harifenitra Jonathan </p>
+            <p>Project for WDD 230</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+    <script src="scripts/chamber.js"></script>
+</body>
+
+</html>
