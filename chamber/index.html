@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <meta name="description" content="Welcome to the Chamber of Commerce website. Join us today!">
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:title" content="Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="image.jpg">
+    <meta property="og:url" content="http://127.0.0.1:5500/chamber/index.html">
+
+
+</head>
+
+<body>
+    <header>
+        <h1>Antsirabe Chamber of Commerce</h1>
+    </header>
+
+    <nav>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <ul class="menu">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <img src="images/hero.jpg" alt="Hero Image">
+            <h2>Join the Chamber of Commerce Today!</h2>
+            <a href="#" class="cta">Join Now</a>
+        </section>
+        <section class="upcoming">
+            <section class="current-events">
+                <h2>Current Events</h2>
+                <p>Event 1: </p>
+                <p>Event 2: </p>
+            </section>
+
+            <section class="weather-card">
+                <h2>Weather Forecast</h2>
+                <p>Today's Weather: </p>
+            </section>
+
+        </section>
+        <section class="spotlights">
+            <h2>Spotlights</h2>
+            <div class="spotlight">
+                <h3>Company 1</h3>
+                <p>...</p>
+            </div>
+            <div class="spotlight">
+                <h3>Company 2</h3>
+                <p>...</p>
+            </div>
+            <div class="spotlight">
+                <h3>Company 3</h3>
+                <p>...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <p>Email: cei.antsirabe@gmail.com</p>
+            <p>Phone: 34-571-5117</p>
+        </div>
+        <div class="development-info">
+            <p>Developed by: Harifenitra Jonathan </p>
+            <p>Project for WDD 230</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('lastModified').textContent = document.lastModified;
+        function toggleMenu() {
+            var menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
