@@ -60,4 +60,13 @@
         max-width: 1000px;
         height: auto;
     }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        text-align: left;
+        margin-left: auto;
+    }
+
 }

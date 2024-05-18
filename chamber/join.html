@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <meta name="description" content="Welcome to the Chamber of Commerce website. Join us today!">
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:title" content="Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="image.jpg">
+    <meta property="og:url" content="http://127.0.0.1:5500/chamber/index.html">
+
+
+</head>
+
+<body>
+    <header>
+        <h1>Antsirabe Chamber of Commerce</h1>
+    </header>
+    <nav>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li class="active"><a href="join.html">Join us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Join Our Organization</h1>
+        <div class="container">
+            <div class="form-container">
+                <form method="get" action="thankyou.html">
+                    <label for="first-name">First Name*</label>
+                    <input type="text" id="first-name" name="first_name" required>
+                    <br><br>
+
+                    <label for="last-name">Last Name*</label>
+                    <input type="text" id="last-name" name="last_name" required>
+                    <br><br>
+
+                    <label for="title">Title/Position*</label>
+                    <input type="text" id="title" name="title" pattern="[A-Za-z\s\-]{7,}"
+                        title="Only alpha characters, hyphens, and spaces are allowed. Minimum of 7 characters."
+                        required>
+                    <br><br>
+
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" placeholder="abcdf@hotmail.com" required>
+                    <br><br>
+
+                    <label for="phone">Mobile Phone Number*</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <br><br>
+
+                    <label for="organization-name">Business/Organization's Name*</label>
+                    <input type="text" id="organization-name" name="organization_name" required>
+                    <br><br>
+
+                    <label for="membership-level">Membership Level</label>
+                    <select id="membership-level" name="membership_level" required>
+                        <option value="">Select a membership level</option>
+                        <option value="NP">NP Membership (Non Profit - No Fee)</option>
+                        <option value="Bronze">Bronze Membership</option>
+                        <option value="Silver">Silver Membership</option>
+                        <option value="Gold">Gold Membership</option>
+                    </select>
+                    <br><br>
+
+                    <label for="description">Business/Organization's Description</label>
+                    <textarea id="description" name="description" rows="4" cols="50"></textarea>
+                    <br><br>
+
+                    <input type="hidden" id="timestamp" name="timestamp" value="<?php echo date('Y-m-d H:i:s'); ?>">
+
+                    <input type="submit" value="Join us">
+            </div>
+            <div class="benefits-container">
+                <div class="benefits">
+                    <h2>NP Membership (Non Profit - No Fee)</h2>
+                    <p>Benefits:</p>
+                    <ul>
+                        <li>Access to special events</li>
+                        <li>Basic training sessions</li>
+                    </ul>
+                </div>
+                <div class="benefits">
+                    <h2>Bronze Membership</h2>
+                    <p>Benefits:</p>
+                    <ul>
+                        <li>Access to special events</li>
+                        <li>Enhanced training sessions</li>
+                        <li>10% discount on events</li>
+                    </ul>
+                </div>
+                <div class="benefits">
+                    <h2>Silver Membership</h2>
+                    <p>Benefits:</p>
+                    <ul>
+                        <li>Access to special events</li>
+                        <li>Advanced training sessions</li>
+                        <li>20% discount on events</li>
+                        <li>Advertising on the home page</li>
+                    </ul>
+                </div>
+                <div class="benefits">
+                    <h2>Gold Membership</h2>
+                    <p>Benefits:</p>
+                    <ul>
+                        <li>Access to special events</li>
+                        <li>Exclusive training sessions</li>
+                        <li>30% discount on events</li>
+                        <li>Premium advertising on the home page</li>
+                        <li>Spotlight positions on the home page</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </form>
+
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <p>Email: cei.antsirabe@gmail.com</p>
+            <p>Phone: 34-571-5117</p>
+        </div>
+        <div class="development-info">
+            <p>Developed by: Harifenitra Jonathan </p>
+            <p>Project for WDD 230</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('lastModified').textContent = document.lastModified;
+        function toggleMenu() {
+            var menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
