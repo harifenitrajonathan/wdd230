@@ -36,6 +36,10 @@
                 {
                     "url": "week03/lazyload.html",
                     "title": "Lazyload"
+                },
+                {
+                    "url": "week03/images/landscape.webp",
+                    "title": "WebP"
                 }
             ]
         },
@@ -55,6 +59,14 @@
         {
             "week": "Week 5",
             "links": [
+                {
+                    "url": "https://codepen.io/rajaonarison-harifenitra-jonathan/pen/oNRLgYy?editors=1100",
+                    "title": "JSon File"
+                },
+                {
+                    "url": "week05/scripts/new-ward-members.json",
+                    "title": "Pseudo-elements"
+                },
                 {
                     "url": "week05/prophets.html",
                     "title": "Fetch API"
