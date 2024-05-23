@@ -54,7 +54,7 @@ nav ul {
 nav a {
     color: #fff;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 5px 5px;
 }
 
 nav a:hover,
@@ -66,8 +66,8 @@ main {
     max-width: 100%;
     margin: 0 auto;
     padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-direction: column;
     gap: 20px;
     justify-content: center;
 }
@@ -134,21 +134,6 @@ footer {
     background-color: #665a5d;
 }
 
-@media screen and (max-width: 768px) {
-    .hamburger {
-        display: block;
-    }
-
-    nav ul {
-        display: none;
-    }
-
-    .show {
-        display: block;
-    }
-}
-
-@media only screen and (max-width: 768px) {}
 
 .profile-container {
     background-color: #fff;
