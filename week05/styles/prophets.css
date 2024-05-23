@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    display: grid;
+    gap: 1em;
+    padding: 1em;
+}
+
+/* Default to single column layout for small screens */
+#cards {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* For screens 600px and larger, use a four-column layout */
+@media (min-width: 600px) {
+    #cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+#cards section {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 1em;
+    text-align: center;
+}
+
+#cards section h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 0.5em 0;
+}
+
+#cards section p {
+    margin: 0.5em 0;
+    font-size: 1em;
+    color: #666;
+}
+
+#cards section img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
