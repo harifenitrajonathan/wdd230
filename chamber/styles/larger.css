@@ -70,3 +70,22 @@
     }
 
 }
+
+/*directory larger styles*/
+@media (min-width: 600px) {
+    .grid-view .member-card {
+        flex: 1 1 calc(50% - 32px);
+        max-width: calc(50% - 32px);
+    }
+
+    .list-view .member-card {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 900px) {
+    .grid-view .member-card {
+        flex: 1 1 calc(33.33% - 32px);
+        max-width: calc(33.33% - 32px);
+    }
+}

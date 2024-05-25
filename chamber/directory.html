@@ -26,47 +26,19 @@
     <nav>
         <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
         <ul class="menu">
-            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
             <li><a href="join.html">Join</a></li>
-            <li><a href="directory.html">Directory</a></li>
+            <li class="active"><a href="directory.html">Directory</a></li>
         </ul>
     </nav>
 
     <main>
-        <section class="hero">
-            <img src="images/hero.jpg" alt="Hero Image">
-            <h2>Join the Chamber of Commerce Today!</h2>
-            <a href="join.html" class="cta">Join Now</a>
-        </section>
-        <section class="upcoming">
-            <section class="current-events">
-                <h2>Current Events</h2>
-                <p>Event 1: </p>
-                <p>Event 2: </p>
-            </section>
-
-            <section class="weather-card">
-                <h2>Weather Forecast</h2>
-                <p>Today's Weather: </p>
-            </section>
-
-        </section>
-        <section class="spotlights">
-            <h2>Spotlights</h2>
-            <div class="spotlight">
-                <h3>Company 1</h3>
-                <p>...</p>
-            </div>
-            <div class="spotlight">
-                <h3>Company 2</h3>
-                <p>...</p>
-            </div>
-            <div class="spotlight">
-                <h3>Company 3</h3>
-                <p>...</p>
-            </div>
-        </section>
+        <div class="view-toggle">
+            <button onclick="toggleView('grid')" class="toggle-btn">Grid</button>
+            <button onclick="toggleView('list')" class="toggle-btn">List</button>
+        </div>
+        <div id="members" class="grid-view"></div>
     </main>
 
     <footer>
@@ -81,14 +53,7 @@
             <p>Last Modified: <span id="lastModified"></span></p>
         </div>
     </footer>
-
-    <script>
-        document.getElementById('lastModified').textContent = document.lastModified;
-        function toggleMenu() {
-            var menu = document.querySelector('.menu');
-            menu.classList.toggle('active');
-        }
-    </script>
+    <script src="scripts/directory.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Star Madagascar",
+        "address": "Rue Doctor Joseph Raseta, 101 Antananarivo",
+        "phone": "+261-20-23-277-11",
+        "website": "https://www.star.mg/",
+        "image": "images/Star.png",
+        "membershipLevel": "Gold",
+        "description": "Brasserie STAR Madagascar is the first brewery in Madagascar founded in 1947 by the company La Rochefortaise. It produces the main Malagasy beer."
+    },
+    {
+        "name": "La cotonnère d'Antsirabe",
+        "address": "42CW+CMG, BP 45, Ambositra Road, Antsirabe",
+        "phone": "+261-20-44-484-22",
+        "website": "https://www.groupesocota.com/",
+        "image": "images/cotona.jpg",
+        "membershipLevel": "Silver",
+        "description": "Groupe Socota's origins date back to 1930 when Socota, the Groups first entity was founded as a textile trading company in Madagascar. Today the fabric mill forms a key part of SOCOTA Textiles and Apparel, vertically integrated design, fabric, and garment operations offering unique fashion solutions to European and African markets."
+    },
+    {
+        "name": "Socolait Madagascar",
+        "address": "Ambositra Road Mandaniresaka BP: 216 Antsirabe 110",
+        "phone": "+261-20-44-489-01",
+        "website": "https://web.facebook.com/socolait/?_rdc=1&_rdr",
+        "image": "images/Socolait.jpg",
+        "membershipLevel": "Bronze",
+        "description": "Socolait is a leader in the production and distribution of dairy products in Madagascar: yogurt, butter, condensed milk, powdered milk, cheese, etc."
+    },
+    {
+        "name": "Tiko Oil Antsirabe",
+        "address": "525X+F6J, Antsirabe",
+        "phone": "+261-20-44-487-55",
+        "website": "http://tiko-vita-malagasy.com/",
+        "image": "images/Tiko.jpg",
+        "membershipLevel": "Gold",
+        "description": "TIKO, a prominent company in Madagascar. Initially focused on dairy products, TIKO expanded to include fruit juices, cooking oil, ice cream, and carbonated beverages. The company's growth was supported by a loan from the World Bank, which allowed TIKO to outcompete other dairy producers in Madagascar."
+    },
+    {
+        "name": "Cementis Ibity",
+        "address": "359 Antsirabe, 110",
+        "phone": "+261-20-22-293-88",
+        "website": "https://cementis.io/",
+        "image": "images/Cementis.png",
+        "membershipLevel": "Silver",
+        "description": "CEMENTIS is a new Regional Group supplying cement, and related products, throughout the Indian Ocean Islands of Mauritius, Reunion, Mayotte, and Comoros."
+    },
+    {
+        "name": "Mado Company",
+        "address": "PK 38, RN 7 Morarano, Antsirabe road",
+        "phone": "+261-32-02-288-08",
+        "website": "https://francis.lesigne.free.fr/Sainto/",
+        "image": "images/Mado.webp",
+        "membershipLevel": "Bronze",
+        "description": "Mado is a mountain spring water bottling company. Its source is located on the mountain of Iharanandriana, in the village of Morarano 38km south of Antananarivo, road to Antsirabe."
+    },
+    {
+        "name": "Ciel Textile",
+        "address": "5th Floor, Ebene Skies, Rue de l'Institut, Ebene, Mauritius",
+        "phone": "+230-404-22-00",
+        "website": "https://www.cielgroup.com/",
+        "image": "images/Ciel.jpg",
+        "membershipLevel": "Gold",
+        "description": "CIEL Textile is a world-class global player in textile and garments operations, present in Mauritius, Madagascar, India & Bangladesh. CIEL Textile's vision is to be the Best Global Fashion Partner with the objective to deliver unbeatable value to medium and upmarket retailers."
+    }
+]
