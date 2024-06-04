@@ -7,22 +7,15 @@
     <title>Chamber of Commerce</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/discover.css">
+    <link rel="stylesheet" href="styles/larger.css">
     <meta name="description" content="Welcome to the Chamber of Commerce website. Join us today!">
+    <meta name="author" content="Harifenitra Jonathan">
     <link rel="icon" href="images/favicon.ico">
     <meta property="og:title" content="Chamber of Commerce">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="images/hero.jpg">
-    <meta property="og:url" content="http://127.0.0.1:5500/chamber/index.html">
-
-    <style>
-        main {
-            display: grid;
-            grid-template-columns: 3fr auto;
-            gap: 20px;
-        }
-    </style>
-
-    <link rel="stylesheet" href="styles/larger.css">
+    <meta property="og:image" content="https://i.pinimg.com/originals/54/f4/7e/54f47e029a4480cc6ea83aff05e218ee.jpg">
+    <meta property="og:url" content="https://cpccaf.org/cci-antsirabe/">
 
 </head>
 
@@ -41,93 +34,141 @@
     </nav>
 
     <main>
-        <main>
-            <section class="sidebar">
-                <div class="visit-message"></div>
-                <div class="about-card">
-                    <h2>Discover the Chamber of Commerce</h2>
-                    <p>The Chamber of Commerce in Antsirabe is dedicated to promoting economic growth, fostering
-                        business development, and enhancing the quality of life for the community.</p>
+        <section class="sidebar">
+            <div class="visit-message"></div>
+            <div class="about-card">
+                <h2>Discover the Chamber of Commerce</h2>
+                <p>The Chamber of Commerce in Antsirabe is dedicated to promoting economic growth, fostering
+                    business development, and enhancing the quality of life for the community.</p>
+            </div>
+            <div class="objectives-card">
+                <h3>Key Objectives</h3>
+                <ul>
+                    <li>Promote local businesses</li>
+                    <li>Provide networking opportunities</li>
+                    <li>Advocate for business-friendly policies</li>
+                    <li>Support community initiatives</li>
+                </ul>
+            </div>
+            <div class="events-card">
+                <h3>Upcoming events</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Event</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> June 7th</td>
+                            <td>Business Networking Mixer</td>
+                        </tr>
+                        <tr>
+                            <td>June 15th</td>
+                            <td>Small Business Workshop</td>
+                        </tr>
+                        <tr>
+                            <td>June 22th</td>
+                            <td>Community Clean-Up Day</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="calendar-card">
+                <h3>Calendar</h3>
+                <div id="calendar"></div>
+            </div>
+            <div class="demographics-card">
+                <h3>Demographics</h3>
+                <div class="demographics-chart">
+                    <div class="demographics-item">
+                        <label>Population:</label>
+                        <span>250,000</span>
+                    </div>
+                    <div class="demographics-item">
+                        <label>Median Age:</label>
+                        <span>30.5 years</span>
+                    </div>
+                    <div class="demographics-item">
+                        <label>Household Income:</label>
+                        <span>$40,000</span>
+                    </div>
                 </div>
-                <div class="objectives-card">
-                    <h3>Key Objectives</h3>
-                    <ul>
-                        <li>Promote local businesses</li>
-                        <li>Provide networking opportunities</li>
-                        <li>Advocate for business-friendly policies</li>
-                        <li>Support community initiatives</li>
-                    </ul>
+            </div>
+            <div class="statistics-card">
+                <h3>Statistical Data</h3>
+                <div class="statistics-chart">
+                    <div class="statistics-item">
+                        <label>Unemployment Rate:</label>
+                        <div class="bar" style="width: 5%;"></div>
+                        <span>5%</span>
+                    </div>
+                    <div class="statistics-item">
+                        <label>Business Growth Rate:</label>
+                        <div class="bar" style="width: 35%;"></div>
+                        <span>3.5%</span>
+                    </div>
+                    <div class="statistics-item">
+                        <label>New Businesses:</label>
+                        <div class="bar" style="width: 50%;"></div>
+                        <span>50/year</span>
+                    </div>
                 </div>
-                <div class="events-card">
-                    <h3>Upcoming events</h3>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Date</th>
-                                <th>Event</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>May 15th</td>
-                                <td>Business Networking Mixer</td>
-                            </tr>
-                            <tr>
-                                <td>May 22nd</td>
-                                <td>Small Business Workshop</td>
-                            </tr>
-                            <tr>
-                                <td>June 5th</td>
-                                <td>Community Clean-Up Day</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+            </div>
 
-            </section>
-            <section class="main-content">
-                <figure>
-                    <img data-src="images/images1.webp" alt="Image 1">
-                    <figcaption>Promoting economic growth</figcaption>
-                </figure>
-                <figure>
-                    <img data-src="images/images2.webp" alt="Image 2">
-                    <figcaption>Collaborate with different sectors</figcaption>
-                </figure>
-                <figure>
-                    <img data-src="images/images3.webp" alt="Image 3">
-                    <figcaption>Finding ways to improve visibily</figcaption>
-                </figure>
-                <figure>
-                    <img data-src="images/images4.webp" alt="Image 4">
-                    <figcaption>Enhancing the quality of life for the community.</figcaption>
-                </figure>
-                <figure>
-                    <img data-src="images/images5.webp" alt="Image 5">
-                    <figcaption>Achieve common goal</figcaption>
-                </figure>
-                <figure>
-                    <img data-src="images/images6.webp" alt="Image 6">
-                    <figcaption>Have financial security</figcaption>
-                </figure>
-            </section>
-        </main>
+            <div class="google-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d15009.030101284556!2d47.03216628881665!3d-19.87134482386092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d-19.8788126!2d47.048581!4m5!1s0x21e50e5fa5a465ad%3A0xd0580ce714746b7e!2sRue%20Joffre%2C%20Antsirabe!3m2!1d-19.8641364!2d47.0368484!5e0!3m2!1sfr!2smg!4v1717483518527!5m2!1sfr!2smg"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+
+        </section>
+
+        <section class="main-content">
+            <h3>Our goal is</h3>
+            <figure>
+                <img data-src="images/images1.webp" alt="Promoting Image" src="images/images1.webp">
+                <figcaption>Promoting economic growth</figcaption>
+            </figure>
+            <figure>
+                <img data-src="images/images2.webp" alt="Collaborate Image" src="images/images2.webp">
+                <figcaption>Collaborate with different sectors</figcaption>
+            </figure>
+            <figure>
+                <img data-src="images/images3.webp" alt=" Finding Image" src="images/images3.webp">
+                <figcaption>Finding ways to improve visibily</figcaption>
+            </figure>
+            <figure>
+                <img data-src="images/images4.webp" alt="Enhancing Image" src="images/images4.webp">
+                <figcaption>Enhancing the quality of life for the community.</figcaption>
+            </figure>
+            <figure>
+                <img data-src="images/images5.webp" alt="Achieving Image" src="images/images5.webp">
+                <figcaption>Achieve common goal</figcaption>
+            </figure>
+            <figure>
+                <img data-src="images/images6.webp" alt="Security Image" src="images/images6.webp">
+                <figcaption>Have financial security</figcaption>
+            </figure>
+        </section>
 
     </main>
 
     <footer>
         <div class="contact-info">
             <h2>Contact us</h2>
-            <p>Email: cei.antsirabe@gmail.com</p>
-            <p>Phone: 34-571-5117</p>
+            <p>Email: cei.antsirabe@gmail.com | Phone: 34-571-5117</p>
         </div>
         <div class="development-info">
-            <p>Developed by: Harifenitra Jonathan </p>
-            <p>Project for WDD 230</p>
+            <p>Developed by: Harifenitra Jonathan | Project for WDD 230</p>
             <p>Last Modified: <span id="lastModified"></span></p>
         </div>
     </footer>
     <script src="scripts/chamber.js"></script>
+    <script src="scripts/calendar.js"></script>
 </body>
 
 </html>

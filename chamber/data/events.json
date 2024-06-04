@@ -1,0 +1,50 @@
+[
+    {
+        "title": "Webinar on Marketing Strategies",
+        "date": "2024-06-17",
+        "description": "Learn the latest marketing strategies from industry experts.",
+        "link": "https://digitalmarketinginstitute.com/resources/webinars/event/live-masterclass-ai-tools-in-action"
+    },
+    {
+        "title": "Product Launch",
+        "date": "2024-06-15",
+        "description": "Join us for the launch of our new product.",
+        "link": "https://www.apple.com/tv-pr/"
+    },
+    {
+        "title": "Summer Sale",
+        "date": "2024-07-01",
+        "description": "Enjoy discounts on all items during our summer sale.",
+        "link": "https://www.macys.com/shop/featured/summer-clothes-sale"
+    },
+    {
+        "title": "Tech Conference 2024",
+        "date": "2024-08-12",
+        "description": "A conference for tech enthusiasts to learn about the latest trends in technology.",
+        "link": "https://ai4.io/vegas/"
+    },
+    {
+        "title": "Networking Event",
+        "date": "2024-09-05",
+        "description": "An opportunity to network with professionals in your industry.",
+        "link": "https://www.conferenceineurope.org/conf-detail.php?ev_id=1027125&name=International-Conference-on-Wireless-Sensor-Networks,-Ubiquitous-Computing-and-Applications-(ICWUA)"
+    },
+    {
+        "title": "Workshop on AI",
+        "date": "2024-09-15",
+        "description": "A hands-on workshop to learn about Artificial Intelligence.",
+        "link": "https://aiconference.com/#updates"
+    },
+    {
+        "title": "Annual Gala",
+        "date": "2024-10-10",
+        "description": "Our annual gala event with dinner and entertainment.",
+        "link": "https://opendoor-ny.org/event/gala2024/"
+    },
+    {
+        "title": "Charity Run",
+        "date": "2024-11-05",
+        "description": "Participate in our charity run to support local causes.",
+        "link": "https://www.runtatton.com/event/run-tatton-half-marathon-november-2024/"
+    }
+]

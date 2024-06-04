@@ -9,13 +9,12 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <meta name="description" content="Welcome to the Chamber of Commerce website. Join us today!">
+    <meta name="author" content="Harifenitra Jonathan">
     <link rel="icon" href="images/favicon.ico">
     <meta property="og:title" content="Chamber of Commerce">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="image.jpg">
-    <meta property="og:url" content="http://127.0.0.1:5500/chamber/index.html">
-
-
+    <meta property="og:image" content="https://i.pinimg.com/originals/54/f4/7e/54f47e029a4480cc6ea83aff05e218ee.jpg">
+    <meta property="og:url" content="https://cpccaf.org/cci-antsirabe/">
 </head>
 
 <body>
@@ -33,62 +32,70 @@
         </ul>
     </nav>
 
+    <div id="meet-greet-banner" class="banner">
+        <p>Join us for the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.</p>
+        <span class="close-banner" onclick="closeBanner()">❌</span>
+    </div>
+
     <main>
         <section class="hero">
             <img src="images/hero.jpg" alt="Hero Image">
-            <h2>Join the Chamber of Commerce Today!</h2>
-            <a href="join.html" class="cta">Join Now</a>
+            <div class="herolabel">
+                <h2>Join the Chamber of Commerce Today!</h2>
+                <a href="join.html" class="cta">Join Now</a>
+            </div>
         </section>
+
         <section class="upcoming">
             <section class="current-events">
                 <h2>Current Events</h2>
-                <p>Event 1: </p>
-                <p>Event 2: </p>
+                <div id="events-list"></div>
+                <div id="prev-button" style="display: none;">&lt; Prev</div>
+                <div id="next-button">Next &gt;</div>
             </section>
 
             <section class="weather-card">
                 <h2>Weather Forecast</h2>
-                <p>Today's Weather: </p>
+                <p class="current-weather">Today's Weather: <span id="current-weather"></span></p>
+                <p class="current-temperature">Current Temperature: <span id="current-temperature"></span>°C</p>
+                <img id="weather-icon" src="placeholder.jpg" alt="Weather Icon">
+                <div class="forecast">
+                    <h3> Next three day forecast</h3>
+                    <div id="forecast"></div>
+                </div>
             </section>
-
         </section>
         <section class="spotlights">
             <h2>Spotlights</h2>
-            <div class="spotlight">
-                <h3>Company 1</h3>
-                <p>...</p>
-            </div>
-            <div class="spotlight">
-                <h3>Company 2</h3>
-                <p>...</p>
-            </div>
-            <div class="spotlight">
-                <h3>Company 3</h3>
-                <p>...</p>
-            </div>
+            <div id="spotlight-container"></div>
         </section>
     </main>
 
     <footer>
         <div class="contact-info">
-            <h2>Contact Us</h2>
-            <p>Email: cei.antsirabe@gmail.com</p>
-            <p>Phone: 34-571-5117</p>
+            <h2>Contact us</h2>
+            <p>Email: cei.antsirabe@gmail.com | Phone: 34-571-5117</p>
         </div>
         <div class="development-info">
-            <p>Developed by: Harifenitra Jonathan </p>
-            <p>Project for WDD 230</p>
+            <p>Developed by: Harifenitra Jonathan | Project for WDD 230</p>
             <p>Last Modified: <span id="lastModified"></span></p>
         </div>
     </footer>
 
     <script>
         document.getElementById('lastModified').textContent = document.lastModified;
+
         function toggleMenu() {
             var menu = document.querySelector('.menu');
             menu.classList.toggle('active');
         }
+
     </script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/spotlights.js"></script>
+    <script src="scripts/banner.js"></script>
+    <script src="scripts/event.js"></script>
+
 </body>
 
 </html>
